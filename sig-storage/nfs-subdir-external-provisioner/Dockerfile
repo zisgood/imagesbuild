@@ -1,4 +1,4 @@
-git clone git@github.com:zisgood/imagesbuild.git
+RUN git clone git@github.com:zisgood/imagesbuild.git
 mkdir -vp imagesbuild/sig-storage/nfs-subdir-external-provisioner
 tee imagesbuild/sig-storage/nfs-subdir-external-provisioner/Dockerfile  <<'EOF'
 FROM k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
