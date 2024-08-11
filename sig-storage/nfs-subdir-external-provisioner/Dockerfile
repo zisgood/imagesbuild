@@ -4,4 +4,4 @@ RUN mkdir -vp imagesbuild/sig-storage/nfs-subdir-external-provisioner
 RUN tee imagesbuild/sig-storage/nfs-subdir-external-provisioner/Dockerfile  <<'EOF'
 LABEL MAINTAINER=master@zisgood.top BUILDTYPE=Aliyun
 EOF
-git add . && git commit -m "nfs-subdir-external-provisioner" && git push
+RUN git add . && git commit -m "nfs-subdir-external-provisioner" && git push
